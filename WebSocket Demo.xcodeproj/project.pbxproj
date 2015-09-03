@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		839F11331AC576C30084D4BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F11321AC576C30084D4BF /* main.m */; };
+		839F11361AC576C30084D4BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F11351AC576C30084D4BF /* AppDelegate.m */; };
+		839F11391AC576C30084D4BF /* WSDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F11381AC576C30084D4BF /* WSDViewController.m */; };
+		839F113C1AC576C30084D4BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F113A1AC576C30084D4BF /* Main.storyboard */; };
+		839F113E1AC576C30084D4BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F113D1AC576C30084D4BF /* Images.xcassets */; };
+		839F11411AC576C30084D4BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839F113F1AC576C30084D4BF /* LaunchScreen.xib */; };
+		839F114D1AC576C30084D4BF /* WebSocket_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F114C1AC576C30084D4BF /* WebSocket_DemoTests.m */; };
+		839F11581AC579160084D4BF /* WSDSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F11571AC579160084D4BF /* WSDSocket.m */; };
+		FE1D5C596989142100991C55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEF22CD717CB2A046E65191 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839F11471AC576C30084D4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839F11251AC576C30084D4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839F112C1AC576C30084D4BF;
+			remoteInfo = "WebSocket Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EEF22CD717CB2A046E65191 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		839F112D1AC576C30084D4BF /* WebSocket Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebSocket Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		839F11311AC576C30084D4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839F11321AC576C30084D4BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		839F11341AC576C30084D4BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		839F11351AC576C30084D4BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		839F11371AC576C30084D4BF /* WSDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDViewController.h; sourceTree = "<group>"; };
+		839F11381AC576C30084D4BF /* WSDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDViewController.m; sourceTree = "<group>"; };
+		839F113B1AC576C30084D4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		839F113D1AC576C30084D4BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		839F11401AC576C30084D4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		839F11461AC576C30084D4BF /* WebSocket DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebSocket DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		839F114B1AC576C30084D4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839F114C1AC576C30084D4BF /* WebSocket_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocket_DemoTests.m; sourceTree = "<group>"; };
+		839F11561AC579160084D4BF /* WSDSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDSocket.h; sourceTree = "<group>"; };
+		839F11571AC579160084D4BF /* WSDSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDSocket.m; sourceTree = "<group>"; };
+		A1DDBBC0255921C551594617 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FAEAB5815644BDB96A7ED280 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839F112A1AC576C30084D4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1D5C596989142100991C55 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839F11431AC576C30084D4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C146DEEF5FF357902E7EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1DDBBC0255921C551594617 /* Pods.debug.xcconfig */,
+				FAEAB5815644BDB96A7ED280 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		839F11241AC576C30084D4BF = {
+			isa = PBXGroup;
+			children = (
+				839F112F1AC576C30084D4BF /* WebSocket Demo */,
+				839F11491AC576C30084D4BF /* WebSocket DemoTests */,
+				839F112E1AC576C30084D4BF /* Products */,
+				01C146DEEF5FF357902E7EAA /* Pods */,
+				9DBC4E09C6CCEDCB94599798 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		839F112E1AC576C30084D4BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839F112D1AC576C30084D4BF /* WebSocket Demo.app */,
+				839F11461AC576C30084D4BF /* WebSocket DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839F112F1AC576C30084D4BF /* WebSocket Demo */ = {
+			isa = PBXGroup;
+			children = (
+				839F115B1AC59C9A0084D4BF /* View Controllers */,
+				839F115A1AC5969C0084D4BF /* Socket */,
+				839F11341AC576C30084D4BF /* AppDelegate.h */,
+				839F11351AC576C30084D4BF /* AppDelegate.m */,
+				839F113A1AC576C30084D4BF /* Main.storyboard */,
+				839F113D1AC576C30084D4BF /* Images.xcassets */,
+				839F113F1AC576C30084D4BF /* LaunchScreen.xib */,
+				839F11301AC576C30084D4BF /* Supporting Files */,
+			);
+			path = "WebSocket Demo";
+			sourceTree = "<group>";
+		};
+		839F11301AC576C30084D4BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839F11311AC576C30084D4BF /* Info.plist */,
+				839F11321AC576C30084D4BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839F11491AC576C30084D4BF /* WebSocket DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				839F114C1AC576C30084D4BF /* WebSocket_DemoTests.m */,
+				839F114A1AC576C30084D4BF /* Supporting Files */,
+			);
+			path = "WebSocket DemoTests";
+			sourceTree = "<group>";
+		};
+		839F114A1AC576C30084D4BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839F114B1AC576C30084D4BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839F115A1AC5969C0084D4BF /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				839F11561AC579160084D4BF /* WSDSocket.h */,
+				839F11571AC579160084D4BF /* WSDSocket.m */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		839F115B1AC59C9A0084D4BF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				839F11371AC576C30084D4BF /* WSDViewController.h */,
+				839F11381AC576C30084D4BF /* WSDViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9DBC4E09C6CCEDCB94599798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EEF22CD717CB2A046E65191 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839F112C1AC576C30084D4BF /* WebSocket Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839F11501AC576C30084D4BF /* Build configuration list for PBXNativeTarget "WebSocket Demo" */;
+			buildPhases = (
+				8DC55A1113522ACD97CFE86C /* Check Pods Manifest.lock */,
+				839F11291AC576C30084D4BF /* Sources */,
+				839F112A1AC576C30084D4BF /* Frameworks */,
+				839F112B1AC576C30084D4BF /* Resources */,
+				03D41808CAD2E832F5242F0F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WebSocket Demo";
+			productName = "WebSocket Demo";
+			productReference = 839F112D1AC576C30084D4BF /* WebSocket Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		839F11451AC576C30084D4BF /* WebSocket DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839F11531AC576C30084D4BF /* Build configuration list for PBXNativeTarget "WebSocket DemoTests" */;
+			buildPhases = (
+				839F11421AC576C30084D4BF /* Sources */,
+				839F11431AC576C30084D4BF /* Frameworks */,
+				839F11441AC576C30084D4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839F11481AC576C30084D4BF /* PBXTargetDependency */,
+			);
+			name = "WebSocket DemoTests";
+			productName = "WebSocket DemoTests";
+			productReference = 839F11461AC576C30084D4BF /* WebSocket DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839F11251AC576C30084D4BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WSD;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Brightec;
+				TargetAttributes = {
+					839F112C1AC576C30084D4BF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					839F11451AC576C30084D4BF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 839F112C1AC576C30084D4BF;
+					};
+				};
+			};
+			buildConfigurationList = 839F11281AC576C30084D4BF /* Build configuration list for PBXProject "WebSocket Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 839F11241AC576C30084D4BF;
+			productRefGroup = 839F112E1AC576C30084D4BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839F112C1AC576C30084D4BF /* WebSocket Demo */,
+				839F11451AC576C30084D4BF /* WebSocket DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839F112B1AC576C30084D4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839F113C1AC576C30084D4BF /* Main.storyboard in Resources */,
+				839F11411AC576C30084D4BF /* LaunchScreen.xib in Resources */,
+				839F113E1AC576C30084D4BF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839F11441AC576C30084D4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D41808CAD2E832F5242F0F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC55A1113522ACD97CFE86C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839F11291AC576C30084D4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839F11391AC576C30084D4BF /* WSDViewController.m in Sources */,
+				839F11581AC579160084D4BF /* WSDSocket.m in Sources */,
+				839F11361AC576C30084D4BF /* AppDelegate.m in Sources */,
+				839F11331AC576C30084D4BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839F11421AC576C30084D4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839F114D1AC576C30084D4BF /* WebSocket_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839F11481AC576C30084D4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839F112C1AC576C30084D4BF /* WebSocket Demo */;
+			targetProxy = 839F11471AC576C30084D4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		839F113A1AC576C30084D4BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839F113B1AC576C30084D4BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		839F113F1AC576C30084D4BF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839F11401AC576C30084D4BF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		839F114E1AC576C30084D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		839F114F1AC576C30084D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839F11511AC576C30084D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DDBBC0255921C551594617 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WebSocket Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		839F11521AC576C30084D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEAB5815644BDB96A7ED280 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WebSocket Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		839F11541AC576C30084D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WebSocket DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocket Demo.app/WebSocket Demo";
+			};
+			name = Debug;
+		};
+		839F11551AC576C30084D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WebSocket DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocket Demo.app/WebSocket Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839F11281AC576C30084D4BF /* Build configuration list for PBXProject "WebSocket Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839F114E1AC576C30084D4BF /* Debug */,
+				839F114F1AC576C30084D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839F11501AC576C30084D4BF /* Build configuration list for PBXNativeTarget "WebSocket Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839F11511AC576C30084D4BF /* Debug */,
+				839F11521AC576C30084D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839F11531AC576C30084D4BF /* Build configuration list for PBXNativeTarget "WebSocket DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839F11541AC576C30084D4BF /* Debug */,
+				839F11551AC576C30084D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 839F11251AC576C30084D4BF /* Project object */;
+}
